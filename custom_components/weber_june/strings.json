@@ -1,0 +1,61 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Weber Connect",
+        "description": "Enter the account refresh token. The appliance id is detected automatically while the grill is powered on; if detection fails, enter it manually.",
+        "data": {
+          "refresh_token": "Refresh token",
+          "appliance_id": "Appliance id (optional)",
+          "companion_id": "Companion id (optional)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Weber Connect — re-authenticate",
+        "description": "The stored refresh token was rejected by the Weber cloud. Paste a current one to reconnect; the grill and its entities are kept.",
+        "data": {
+          "refresh_token": "Refresh token"
+        }
+      },
+      "reconfigure": {
+        "title": "Weber Connect — appliance details",
+        "description": "The companion id of the registration this token belongs to. Used only to read the appliance model and serial number from the cloud; leave empty to keep generic device info.",
+        "data": {
+          "companion_id": "Companion id (optional)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "The refresh token was rejected.",
+      "cannot_connect": "Could not reach the Weber cloud.",
+      "missing_client_credentials": "WEBER_CLIENT_ID / WEBER_CLIENT_SECRET are not set in the Home Assistant environment. See the README.",
+      "appliance_not_found": "Could not detect the appliance id (is the grill powered on?). Enter it manually."
+    },
+    "abort": {
+      "already_configured": "This grill is already configured.",
+      "reauth_successful": "Re-authentication was successful.",
+      "reconfigure_successful": "Configuration updated."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "cavity_temp": {
+        "name": "Cavity temperature"
+      },
+      "cavity_target": {
+        "name": "Cavity target"
+      },
+      "probe_temp": {
+        "name": "Probe {index}"
+      },
+      "mode": {
+        "name": "Mode"
+      }
+    },
+    "binary_sensor": {
+      "connection": {
+        "name": "Connection"
+      }
+    }
+  }
+}
