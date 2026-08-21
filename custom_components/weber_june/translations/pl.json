@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Weber Spirit / June",
+        "description": "Podaj refresh token konta. Identyfikator urządzenia wykrywany jest automatycznie, gdy grill jest włączony; jeśli się nie uda — wpisz go ręcznie.",
+        "data": {
+          "refresh_token": "Refresh token",
+          "appliance_id": "Identyfikator urządzenia (opcjonalnie)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Refresh token został odrzucony.",
+      "cannot_connect": "Nie udało się połączyć z chmurą Weber.",
+      "appliance_not_found": "Nie wykryto identyfikatora urządzenia (czy grill jest włączony?). Wpisz go ręcznie.",
+      "missing_client_credentials": "WEBER_CLIENT_ID / WEBER_CLIENT_SECRET nie są ustawione w środowisku Home Assistant. Zobacz README."
+    },
+    "abort": {
+      "already_configured": "Ten grill jest już skonfigurowany."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "cavity_temp": {
+        "name": "Temperatura komory"
+      },
+      "cavity_target": {
+        "name": "Cel komory"
+      },
+      "probe_temp": {
+        "name": "Sonda {index}"
+      },
+      "mode": {
+        "name": "Tryb"
+      }
+    },
+    "binary_sensor": {
+      "connection": {
+        "name": "Połączenie"
+      }
+    }
+  }
+}
