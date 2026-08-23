@@ -15,9 +15,12 @@ reimplemented with **zero external dependencies** (Python stdlib only).
 
 ## Screenshots
 
-| Device & entities | Setup |
+| Device page — model, serial and live sensors from the cloud | Setup |
 |---|---|
-| ![Device page](images/device.png) | ![Config flow](images/config-flow.png) |
+| ![Device page showing the Weber Connect device info card and the cavity, probe, connection and mode sensors](images/device.png) | ![Config flow asking for the refresh token, with optional appliance id and companion id](images/config-flow.png) |
+
+<sup>The serial number in the first shot is partly masked; the integration itself
+shows it in full.</sup>
 
 ## Install
 

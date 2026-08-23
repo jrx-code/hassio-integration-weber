@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2026-08-23
+
+Documentation only.
+
+### Changed
+- Fresh screenshots: the device page now shows the appliance model and serial read
+  from the cloud, the brand icon and the current sensor values; the setup shot shows
+  the config flow as it stands today, companion id included. The old pair predated
+  the rename to Weber Connect and the appliance-details step.
+
 ## [0.2.1] - 2026-08-23
 
 Packaging only — no functional change to the integration.
@@ -52,6 +62,7 @@ First release.
   file in the config directory, so they are never committed to this repository.
 - Zero external dependencies — Python standard library only.
 
+[0.2.2]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.2
 [0.2.1]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.1
 [0.2.0]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.0
 [0.1.0]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.1.0
