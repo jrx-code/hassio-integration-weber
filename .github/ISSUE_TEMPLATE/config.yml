@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Setup questions
+    url: https://github.com/jrx-code/hassio-integration-weber#configuration
+    about: The README covers the OAuth client credentials, the refresh token and the optional companion id.

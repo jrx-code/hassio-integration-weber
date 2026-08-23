@@ -1,5 +1,11 @@
 # Weber Connect — Home Assistant integration
 
+[![HACS: custom repository](https://img.shields.io/badge/HACS-custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
+[![Release](https://img.shields.io/github/v/release/jrx-code/hassio-integration-weber?sort=semver)](https://github.com/jrx-code/hassio-integration-weber/releases)
+[![Validate](https://github.com/jrx-code/hassio-integration-weber/actions/workflows/validate.yml/badge.svg)](https://github.com/jrx-code/hassio-integration-weber/actions/workflows/validate.yml)
+[![Home Assistant: 2024.10+](https://img.shields.io/badge/Home%20Assistant-2024.10%2B-41BDF5.svg)](https://www.home-assistant.io/)
+[![License: MIT](https://img.shields.io/github/license/jrx-code/hassio-integration-weber)](LICENSE)
+
 Read the live state of a WiFi-connected **Weber Connect** grill (Spirit / June) in Home
 Assistant, **straight from the cloud, with no companion app or Android VM running**.
 
@@ -12,6 +18,34 @@ reimplemented with **zero external dependencies** (Python stdlib only).
 | Device & entities | Setup |
 |---|---|
 | ![Device page](images/device.png) | ![Config flow](images/config-flow.png) |
+
+## Install
+
+Requires Home Assistant **2024.10** or newer.
+
+### Via HACS (recommended)
+
+[![Open your Home Assistant instance and open this repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=jrx-code&repository=hassio-integration-weber&category=integration)
+
+Or by hand: *HACS → ⋮ → Custom repositories* → add
+`https://github.com/jrx-code/hassio-integration-weber` with category **Integration**,
+then download **Weber Connect**.
+
+Restart Home Assistant afterwards — HACS does not load a new integration on its own.
+
+### Manually
+
+Copy `custom_components/weber_june/` into your Home Assistant `config/custom_components/`
+directory and restart.
+
+### Then
+
+1. Put the OAuth client credentials in place — see [Configuration](#configuration).
+2. *Settings → Devices & Services → Add Integration → **Weber Connect***
+
+   [![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=weber_june)
+
+3. Paste your account refresh token.
 
 ## Entities
 
@@ -120,13 +154,9 @@ the raw REST snapshot and a full field inventory of the last companion frame —
 including fields the integration does not decode — next to the decoded state.
 Appliance, session and probe identifiers are redacted.
 
-## Install (HACS)
+## Changelog
 
-1. HACS → Integrations → ⋮ → *Custom repositories* → add this repo (category:
-   *Integration*).
-2. Install **Weber Connect**, restart Home Assistant.
-3. *Settings → Devices & Services → Add Integration → Weber Connect* and
-   paste the refresh token.
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

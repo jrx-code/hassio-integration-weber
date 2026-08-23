@@ -1,0 +1,20 @@
+name: Feature request
+description: Suggest an entity, a decoded field or another improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like the integration to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why — what are you trying to build?
+  - type: markdown
+    attributes:
+      value: |
+        The integration is **read-only** and reads undocumented cloud endpoints. If your
+        request needs a field that is not in the cloud payload (the probe target, for
+        one), say so — the answer may be that the data does not exist outside BLE.

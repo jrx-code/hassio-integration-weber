@@ -1,0 +1,51 @@
+name: Bug report
+description: Something the integration does wrong
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste a refresh token, appliance id, companion id or serial number.**
+        The diagnostics download redacts those for you — use it instead of hand-copied
+        payloads, and check any screenshot before uploading it.
+  - type: input
+    id: version
+    attributes:
+      label: Integration version
+      description: From HACS, or the `version` in `custom_components/weber_june/manifest.json`.
+      placeholder: "0.2.1"
+    validations:
+      required: true
+  - type: input
+    id: ha_version
+    attributes:
+      label: Home Assistant version
+      placeholder: "2026.8.2"
+    validations:
+      required: true
+  - type: input
+    id: grill
+    attributes:
+      label: Grill model
+      placeholder: "Spirit EPX-325S"
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens, and what you expected instead
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log output
+      description: Entries mentioning `weber_june`. Rendered as a code block, no backticks needed.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before filing
+      options:
+        - label: The official Weber Connect app is not running — the cloud stream is single-session and only one client can hold it.
+          required: true
+        - label: I removed identifiers from everything I pasted above.
+          required: true
