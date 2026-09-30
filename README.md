@@ -157,6 +157,10 @@ the raw REST snapshot and a full field inventory of the last companion frame —
 including fields the integration does not decode — next to the decoded state.
 Appliance, session and probe identifiers are redacted.
 
+## Related
+
+- [Weber Grill Card](https://github.com/jrx-code/weber-grill-card) — Lovelace card for cavity temperature, probes, connectivity and cook-session alerts using this integration’s entities.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
