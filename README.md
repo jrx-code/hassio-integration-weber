@@ -1,6 +1,6 @@
 # Weber Connect — Home Assistant integration
 
-[![HACS: custom repository](https://img.shields.io/badge/HACS-custom-41BDF5.svg)](https://hacs.xyz/docs/faq/custom_repositories)
+[![HACS: default](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 [![Release](https://img.shields.io/github/v/release/jrx-code/hassio-integration-weber?sort=semver)](https://github.com/jrx-code/hassio-integration-weber/releases)
 [![Validate](https://github.com/jrx-code/hassio-integration-weber/actions/workflows/validate.yml/badge.svg)](https://github.com/jrx-code/hassio-integration-weber/actions/workflows/validate.yml)
 [![Home Assistant: 2024.10+](https://img.shields.io/badge/Home%20Assistant-2024.10%2B-41BDF5.svg)](https://www.home-assistant.io/)
@@ -30,9 +30,8 @@ Requires Home Assistant **2024.10** or newer.
 
 [![Open your Home Assistant instance and open this repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=jrx-code&repository=hassio-integration-weber&category=integration)
 
-Or by hand: *HACS → ⋮ → Custom repositories* → add
-`https://github.com/jrx-code/hassio-integration-weber` with category **Integration**,
-then download **Weber Connect**.
+Or by hand: search for **Weber Connect** in HACS (it is in the HACS default store,
+no custom repository needed) and download it.
 
 Restart Home Assistant afterwards — HACS does not load a new integration on its own.
 
