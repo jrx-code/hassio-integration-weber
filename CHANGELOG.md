@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and the project uses
 [semantic versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.3] - 2026-11-05
+
+### Added
+- Manifest declares `categories` (Appliances & cleaning › Cooking), so the Home Assistant 2026.11 Marketplace lists the integration under that category. No functional change.
+
 ## [0.2.2] - 2026-08-23
 
 Documentation only.
@@ -62,6 +67,7 @@ First release.
   file in the config directory, so they are never committed to this repository.
 - Zero external dependencies — Python standard library only.
 
+[0.2.3]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.3
 [0.2.2]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.2
 [0.2.1]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.1
 [0.2.0]: https://github.com/jrx-code/hassio-integration-weber/releases/tag/v0.2.0

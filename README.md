@@ -30,8 +30,8 @@ Requires Home Assistant **2024.10** or newer.
 
 [![Open your Home Assistant instance and open this repository inside HACS.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=jrx-code&repository=hassio-integration-weber&category=integration)
 
-Or by hand: search for **Weber Connect** in HACS (it is in the HACS default store,
-no custom repository needed) and download it.
+Or by hand: search for **Weber Connect** in HACS, or in the Marketplace on Home Assistant
+2026.11+ (it is in the default store, no custom repository needed), and download it.
 
 Restart Home Assistant afterwards — HACS does not load a new integration on its own.
 
